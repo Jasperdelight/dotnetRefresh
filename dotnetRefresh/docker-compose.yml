@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/dotnetRefresh:latest
+    env_file:
+      - dotnetRefresh-env
+    ports:
+      - "7045:80"
